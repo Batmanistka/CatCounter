@@ -1,0 +1,242 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.catcounter.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.courtcounter.MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:shadowColor="#F4511E"
+            android:text="@string/title"
+            android:textColor="#E65100"
+            android:textSize="22sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_name_first_cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Cat Name"
+                    android:inputType="textPersonName|textCapWords"
+                    android:textColor="#212121"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:src="@drawable/cat" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="@string/resault_0"
+                    android:textColor="#212121"
+                    android:textSize="56sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="24dp"
+                    android:background="#FF7043"
+                    android:onClick="addFourForCatA"
+                    android:text="@string/ParkourSprint"
+                    android:textColor="#212121" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FFC107"
+                    android:onClick="addThreeForCatA"
+                    android:text="@string/TrotJumping"
+                    android:textColor="#212121" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FFEB3B"
+                    android:onClick="addTwoForCatA"
+                    android:text="@string/ToysRolling"
+                    android:textColor="#212121" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FFF176"
+                    android:onClick="addOneForCatA"
+                    android:text="@string/ImHereLook"
+                    android:textColor="#212121" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_name_second_cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Cat Name"
+                    android:inputType="textPersonName|textCapWords"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:src="@drawable/catt" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="@string/resault_0"
+                    android:textColor="#212121"
+                    android:textSize="56sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="24dp"
+                    android:background="#FF7043"
+                    android:onClick="addFourForCatB"
+                    android:text="@string/ParkourSprint"
+                    android:textColor="#212121" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FFC107"
+                    android:onClick="addThreeForCatB"
+                    android:text="@string/TrotJumping"
+                    android:textColor="#212121" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FFEB3B"
+                    android:onClick="addTwoForCatB"
+                    android:text="@string/ToysRolling"
+                    android:textColor="#212121" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FFF176"
+                    android:onClick="addOneForCatB"
+                    android:text="@string/ImHereLook"
+                    android:textColor="#212121" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="14dp"
+            android:background="#C6FF00"
+            android:onClick="newDayScore"
+            android:text="New Day"
+            android:textAlignment="center"
+            android:textColor="#212121" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
